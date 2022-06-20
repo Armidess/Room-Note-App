@@ -6,26 +6,26 @@
     tools:context=".UI.AddNoteFragment">
 
     <EditText
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Title"
         android:inputType="textPersonName"
-        android:hint="Title"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
 
     <EditText
-        android:layout_below="@id/editTextTextPersonName"
-        android:id="@+id/button_save"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/notebody"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:hint="Note"
+        android:layout_below="@id/title"
         android:gravity="top"
-        android:inputType="textMultiLine" />
+        android:hint="Note"
+        android:inputType="textMultiLine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
+        android:id="@+id/buttonSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
